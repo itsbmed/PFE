@@ -1,0 +1,87 @@
+// Import all scss moove files
+@import "extras/transitions";
+@import "extras/simple-line-icons";
+@import "extras/animate";
+@import "extras/metismenu";
+@import "extras/progress";
+@import "extras/opendyslexic";
+@import "moove/general";
+@import "moove/navbar";
+@import "moove/blocks";
+@import "moove/nav-drawer";
+@import "moove/breadcrumb";
+@import "moove/frontpage";
+@import "moove/login";
+@import "moove/register";
+@import "moove/footer";
+@import "moove/mydashboard";
+@import "moove/course";
+@import "moove/mypublic";
+@import "moove/grade";
+@import "moove/btnapp";
+@import "moove/calendar";
+@import "moove/enrol";
+@import "moove/responsive";
+@import "moove/accessibilitybar";
+@import "moove/mixins/accessibilityfontsize";
+@import "moove/accessibilitystyles";
+
+                            // --------------------------------------------------------------------------------------------- //
+                            //---------------------------------------------------------------------------------------------//
+.userpicture {
+    border-radius: 16%;
+}
+nav.navbar .drawer-toggle{
+    background-color: #fff;
+    border-radius: 10px;
+}
+nav.navbar .drawer-toggle .nav-link {
+    color: #272727;
+
+}
+nav.navbar .navbar-brand .logo img {
+    max-height: 45px;
+}
+nav.navbar{
+    margin: 1%;
+    border-radius: 10px;
+}
+html, body {
+    margin-top: 1%;
+
+}
+#nav-drawer{
+    margin-top: 2%;
+    border-radius: 10px;
+    margin-left: 1%;
+    background-color: #052231;
+}
+@media (min-width: 768px){
+    body {
+        margin-left: 5%;
+    }
+}
+#nav-drawer ul {
+    padding: 3%;
+}
+#nav-drawer .list-group .list-group-item:hover {
+    background-color: #26c6da;
+    color: white;
+    border-radius: 10px;
+}
+#nav-drawer .list-group .list-group-item a:before {
+    color: #239db8;
+    opacity: 0.5;
+    padding-right: 6%;
+}
+#nav-drawer .list-group .list-group-item:hover a:before {
+    color: #fff;
+    opacity: 1;
+}
+#nav-drawer.closed .list-group .list-group-item a:before {
+    color: #fff;
+    opacity: 1;
+}
+#nav-drawer .list-group+.list-group {
+    border-top: none;
+}
