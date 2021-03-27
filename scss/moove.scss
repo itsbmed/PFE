@@ -96,3 +96,32 @@ body.drawer-open-right [data-region="blocks-column"] {
 #inst39,#inst31,#inst32,#inst33,#inst34,#inst35,#inst36{
 border-radius: 10px;
 }
+@media (min-width: 768px){
+    .pagelayout-mydashboard .card-deck .card {
+        flex-basis: calc(24% - .5rem);
+    }
+}
+.dashboard-card-deck .dashboard-card .dashboard-card-img{
+    height: 23rem!important;
+}
+#page-my-index #region-main-box #region-main .card:not([class*="dashboard-card"]){
+    border-top:none;
+    border-radius: 10px;
+    padding: 2%;
+}
+#instance-47-header{
+    margin: 2%;
+}
+#page-my-index .admininfos {
+    background: white;
+    padding: 2%;
+    border-radius: 10px;
+    margin-left: 1%;
+}
+.btn-secondary {
+    
+    background-color: #f0f2f5;
+    border-radius: 10px;
+    margin: 10px;
+    border-color:#f0f2f5;
+}
