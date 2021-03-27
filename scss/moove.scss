@@ -29,6 +29,10 @@
                             // --------------------------------------------------------------------------------------------- //
                             // --------------------------------- Dashboard Style ------------------------------------------ //
                             //---------------------------------------------------------------------------------------------//
+*:focus {
+outline: none;
+}
+
 .userpicture {
     border-radius: 16%;
 }
@@ -99,6 +103,7 @@ border-radius: 10px;
 @media (min-width: 768px){
     .pagelayout-mydashboard .card-deck .card {
         flex-basis: calc(24% - .5rem);
+        border-radius: 10px;
     }
 }
 .dashboard-card-deck .dashboard-card .dashboard-card-img{
@@ -124,4 +129,42 @@ border-radius: 10px;
     border-radius: 10px;
     margin: 10px;
     border-color:#f0f2f5;
+}
+#crs-ov {
+    background: #f2f4f6;
+    padding: 1.5% 3% 1.5% 3%;
+    border-radius: 10px;
+    margin-bottom: 2%;
+}
+.card-deck{
+    justify-content: center;
+}
+.btn-outline-secondary{
+    border-radius: 10px;
+    border-color: #ced4da;
+}
+nav.navbar ul.navbar-nav .usermenu .dropdown .dropdown-menu {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #052231;
+    padding: 20%;
+    
+}
+.slicon-speedometer:before,.slicon-user:before,.slicon-book-open:before,
+nav.navbar ul.navbar-nav li .dropdown-menu .dropdown-item .slicon-bubble:before,
+.slicon-wrench:before,.slicon-logout:before,.fa-user-secret:before{
+    color: #239db8;
+    opacity: 0.5;
+    padding-right: 6%;
+}
+nav.navbar ul.navbar-nav li .dropdown-menu .dropdown-item, nav.navbar ul.navbar-nav .nav-item .dropdown-menu .dropdown-item{
+    color: white;
+}
+nav.navbar ul.navbar-nav li .dropdown-menu .dropdown-item:hover, nav.navbar ul.navbar-nav .nav-item .dropdown-menu .dropdown-item:hover{
+    background: #26c6da;
+    border-radius: 10px;
+}
+.action-menu .dropdown-toggle{
+    outline: none;
+
 }
