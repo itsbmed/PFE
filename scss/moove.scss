@@ -30,9 +30,22 @@
                             // --------------------------------- Dashboard Style ------------------------------------------ //
                             //---------------------------------------------------------------------------------------------//
 *:focus {
-outline: none;
+outline: none!important;
 }
-
+body::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #052231;
+  border: 1px solid #f0f2f5;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+  }
+body::-webkit-scrollbar-track {
+    border: 1px solid #f0f2f5;
+    padding: 2px 0;
+    background-color: #f0f2f5;
+  }
 .userpicture {
     border-radius: 16%;
 }
@@ -167,4 +180,192 @@ nav.navbar ul.navbar-nav li .dropdown-menu .dropdown-item:hover, nav.navbar ul.n
 .action-menu .dropdown-toggle{
     outline: none;
 
+}
+#top-footer .contact ul li{
+ 
+    display: inline-block;
+    margin-right: 2%;
+
+}
+#top-footer .contact ul li a,#top-footer .contact ul li i{
+    font-size: 14px;
+    color: #4a4c50;
+}
+#top-footer .social ul li a {
+    border-radius: 10px;
+    background-color: #7d7e83!important;
+}
+#top-footer .social ul li i {
+  
+    color: white;
+    border: none;
+}
+
+#top-footer .social {
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    padding-right: 4%;
+}
+@media (min-width: 768px){
+    .col-md-7 {
+        padding-left: 4%;
+    }
+}
+#top-footer h3 {
+    color: #7d7e83;
+    padding-left: 1.1rem;
+}
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+// ------------------------------------------- CALENDAR PAGE ----------------------------------------- //
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+}
+.custom-select{
+    border-radius: 10px;
+}
+
+.path-calendar .maincalendar .calendarmonth .header{
+    background :none;
+    color: #052231;
+    line-height: 40px;
+    padding: 7px 3px;
+    text-align: left;
+    border: none;
+    border-radius: 10px;
+}
+.path-calendar .maincalendar .calendarmonth tbody td {
+    border: none;
+    border-radius: 10px;
+    padding: 1%;
+    padding-right: 5px;
+}
+.calendar_event_course {
+    background-color: #7460ee;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.path-calendar .maincalendar .calendarmonth td {
+    height: 7em;
+}
+.cl-content,.dv-content,.ul-content{
+    width: 100%;
+    height: 100%;
+}
+.a-content{
+    margin-right: 5%!important;
+    align-self: center;
+}
+.cl-content {
+    width: 100%;
+    height: 100%;
+    display: flex!important;
+    justify-content: space-between;
+}
+
+.calendar_event_category{
+    background-color: #f0a647;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+.calendar_event_user {
+    background-color: #60d2ee;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.calendar_event_site {
+    background-color: #5df77e;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.path-calendar .maincalendar .calendarmonth ul li>a {
+    text-align: center;
+    text-align: -webkit-center;
+    font-size: 13px;
+    height: 100%;
+    white-space: normal;
+}
+.path-calendar .maincalendar .calendarmonth ul li>a .icon {
+    display: block;
+}
+
+.table-content{
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 5%;
+    background: #eef5f9;
+}
+.path-calendar .maincalendar .calendar-controls .previous, .path-calendar .maincalendar .calendar-controls .next {
+    padding-top: 2%;
+}
+.path-calendar .maincalendar .calendar-controls .current {
+    padding-top: 2%;
+    color: #0f6fc5;
+}
+//--------------------------------------------------------- Site Home -------------------------------------------------//
+#page-header{
+    display:none;
+}
+.cd-cr .w-100 {
+    height: 346px;
+    border-radius: 10px;
+}
+#page-site-index #frontpage-available-course-list h2 {
+    color: #052231;
+    margin-bottom: 2.25rem;
+    margin-top: 2.25rem;
+}
+.cd-cr .card:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 20px rgb(0 0 0 / 37%);
+}
+.cd-cr .card p{
+    text-align: left;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+.cd-cr .btn-primary {
+    color: #052231;
+   background: none; 
+    border-color: #052231;
+    border-radius: 10px;
+}
+.cd-cr .btn-primary:hover {
+    color: #ffffff;
+   background: #052231; 
+}
+.cd-cr{
+    margin-bottom: 2%;
+}
+.cd-cr .badge-info {
+    color: #fff;
+    background-color: #05223159;
+    border-radius: 7px;
+    padding: 2%;
+}
+.cd-cr .card-title a {
+    color: #052231;
+    font-weight: 700;
+}
+.cd-cr .card-title {
+    margin-bottom: .75rem;
+    margin-top: .75rem;
 }

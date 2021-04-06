@@ -42,6 +42,7 @@
     }}>
     {{> core_calendar/month_navigation }}
     {{> core/overlay_loading}}
+    <div class="table-content">
     <table id="month-detailed-{{uniqid}}" class="calendarmonth calendartable m-b-0">
         <thead>
         <tr>
@@ -70,16 +71,16 @@
                         data-drop-zone="month-view-day"
                         data-region="day"
                         data-new-event-timestamp="{{neweventtimestamp}}">
-                        <div class="d-none d-md-block hidden-phone text-xs-center">
+                        <div class="d-none d-md-block hidden-phone text-xs-center cl-content">
                             {{#hasevents}}
-                                <a data-action="view-day-link" href="{{viewdaylink}}" class="day" title="{{viewdaylinktitle}}">{{mday}}</a>
+                                <a class="a-content" data-action="view-day-link" href="{{viewdaylink}}" class="day" title="{{viewdaylinktitle}}">{{mday}}</a>
                             {{/hasevents}}
                             {{^hasevents}}
                                 {{mday}}
                             {{/hasevents}}
                             {{#hasevents}}
-                                <div data-region="day-content">
-                                    <ul>
+                                <div data-region="day-content" class="dv-content">
+                                    <ul class="ul-content">
                                         {{#events}}
                                             {{#underway}}
                                                 <li class="events-underway">[{{name}}]</li>
@@ -118,7 +119,7 @@
                         </div>
                         <div class="d-md-none hidden-desktop hidden-tablet">
                             {{#hasevents}}
-                                <a data-action="view-day-link" href="{{viewdaylink}}" class="day" title="{{viewdaylinktitle}}">{{mday}}</a>
+                                <a  class="a-content" data-action="view-day-link" href="{{viewdaylink}}" class="day" title="{{viewdaylinktitle}}">{{mday}}</a>
                             {{/hasevents}}
                             {{^hasevents}}
                                 <div data-region="day-content">
@@ -135,6 +136,8 @@
         {{/weeks}}
         </tbody>
     </table>
+    </div>
+    
 </div>
 {{#js}}
     require([
